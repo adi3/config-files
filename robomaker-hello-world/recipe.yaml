@@ -10,7 +10,7 @@ Manifests:
       architecture: aarch64
     Lifecycle:
       Install: |
-        snap install —devmode aws-hello-world_0.1_arm64.snap
+        snap install --devmode aws-hello-world_0.1_arm64.snap
       Run: |
         aws-hello-world.launch
     Artifacts:
