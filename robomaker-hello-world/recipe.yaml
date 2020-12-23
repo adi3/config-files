@@ -7,7 +7,7 @@ ComponentPublisher: Amazon
 Manifests:
   - Platform:
       os: linux
-      architecture: arm64
+      architecture: aarch64
     Lifecycle:
       Install: |
         snap install —devmode aws-hello-world_0.1_arm64.snap
