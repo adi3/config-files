@@ -15,6 +15,10 @@ parts:
     build-packages: [lsb-release]
     
 apps:
+  echo:
+    command: rostopic echo /cmd_vel
+    plugs: [network, network-bind]
+    
   launch:
     command: roslaunch hello_world_robot deploy_rotate.launch
     plugs: [network, network-bind]
